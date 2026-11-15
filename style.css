@@ -1,0 +1,71 @@
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #e3eafd;
+}
+header{
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+aside{
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+#alinear{
+    text-align: justify;
+
+}
+
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+.container article {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 12px 20px;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.container article h2 {
+    grid-column: 1 / -1;
+}
+
+.container article img {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+}
+
+@media (max-width: 700px) {
+    .container article {
+        grid-template-columns: 1fr;
+    }
+
+    .container article h2 {
+        grid-column: auto;
+    }
+}
+img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+#link{
+   text-decoration: none;
+   color:rgb(151, 191, 226)
+}
+#link:hover{ color:blueviolet
+    
+}
